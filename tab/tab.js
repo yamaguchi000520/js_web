@@ -33,7 +33,8 @@
     let index = 0;
     while(index < $nav.length){
       $content[index].style.display = 'none';
-      $nav[index].style.display = 'none';
+      //remove = クラスを排除するという命令
+      $nav[index].classList.remove('is-active');
       index++;
     }
 
